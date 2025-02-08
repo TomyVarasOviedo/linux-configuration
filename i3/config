@@ -67,7 +67,7 @@ default_border pixel 3
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/scripts/./launcher_t3
 #Lanzador de powermenu
-bindsym $mod+Shift+s exec powermenu
+bindsym $mod+Shift+s exec ./powermenu.sh
 
 #A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
