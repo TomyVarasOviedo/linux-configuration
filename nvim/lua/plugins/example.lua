@@ -123,6 +123,7 @@ return {
         "bash",
         "html",
         "javascript",
+        "java",
         "json",
         "lua",
         "markdown",
@@ -175,7 +176,17 @@ return {
       }
     end,
   },
-
+  -- Maven Java Proyects plugin
+  {
+    "eatgrass/maven.nvim",
+    cmd = { "Maven", "MavenExec" },
+    dependencies = "nvim-lua/plenary.nvim",
+    config = function()
+      require("maven").setup({
+        executable = "mvn",
+      })
+    end,
+  },
   -- use mini.starter instead of alpha
   { import = "lazyvim.plugins.extras.ui.mini-starter" },
 
