@@ -2,14 +2,14 @@ general {
         output_format = "i3bar"
         colors = true
         markup = pango
-        interval = 5 
+        interval = 10 
         color_good = '#C70039'
-		color_degraded = '#900C3F'
-		color_bad = '#FF5733'
+		    color_degraded = '#900C3F'
+		    color_bad = '#FF5733'
 }
 
-order += "load"
 order += "cpu_usage"
+order += "memory"
 order += "disk /"
 order += "disk /home"
 order += "ethernet enp1s0"
@@ -18,16 +18,16 @@ order += "volume master"
 order += "battery all"
 order += "tztime local"
 
-load {
-        format = "<span background='#f59335'>   %5min RAM </span>"
+memory {
+    format = "<span background='#f59335'>  %percentage_used RAM </span>"
 }
 
 cpu_usage {
-        format = "<span background='#900C3F'> CPU: %usage </span>"
+        format = "<span background='#900C3F'>  %usage </span>"
 }
 
 disk "/" {
-        format = "<span background='#900C3F'>   %free Free </span>"
+        format = "<span background='#900C3F'>   %percentage_free Free </span>"
 }
 
 disk "/home" {
@@ -36,12 +36,12 @@ disk "/home" {
 
 ethernet enp1s0 {
         format_up = "<span background='#900C3F'>  %ip </span>"
-        format_down = "<span background='#581845'>   No hay red </span>"
+        format_down = "<span background='#581845'> 󱞐 </span>"
 }
 
 wireless _first_ {
         format_up = "<span background='#900C3F' color='#FFFFFF' >   %essid </span>"
-        format_down = "<span background='#581845'>   No hay red </span>"
+        format_down = "<span background='#581845'> 󱚼 </span>"
 }
 
 volume master {
@@ -54,11 +54,11 @@ volume master {
 
 battery all {
         format = " <span foreground='#000000' background='#458588'> %status %percentage </span>"
-	format_percentage = "%.0f%s"
-	last_full_capacity = true
-        status_chr = ""
-	status_bat = ""
-        status_full = ""
+	  format_percentage = "%.0f%s"
+	  last_full_capacity = true
+    status_chr = ""
+    status_bat = ""
+    status_full = ""
 }
 
 tztime local {

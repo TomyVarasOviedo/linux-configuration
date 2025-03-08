@@ -68,7 +68,14 @@ default_border pixel 3
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/scripts/./launcher_t3
 #Lanzador de powermenu
 bindsym $mod+Shift+s exec ~/.config/rofi/powermenu/type-4/powermenu.sh
-
+#Github token clipboard
+bindsym $mod+Shift+g exec ~/automatizacion/portapeles/github.sh
+#HDMI Connect espejo
+bindsym $mod+Shift+h exec ~/automatizacion/hdmi-connect/connect.sh
+#HDMI Connect una sola pantalla
+bindsym $mod+Shift+u exec ~/automatizacion/hdmi-connect/connect-unique.sh
+#Rofi WIFI menu 
+bindsym $mod+Shift+w exec ~/.config/rofi-wifi-menu/rofi-wifi-menu.sh
 #A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
