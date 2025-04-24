@@ -2,6 +2,7 @@
 require("config.lazy")
 require("java").setup()
 require("lspconfig").jdtls.setup({})
+require("config.commands")
 -- require("maven").setup({
 --  executable = "mvn", -- `mvn` should be in your `PATH`, or the path to the maven exectable, for example `./mvnw`
 --  cwd = nil, -- work directory, default to `vim.fn.getcwd()`

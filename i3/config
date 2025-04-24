@@ -54,7 +54,10 @@ bindsym $mod+Return exec kitty
 #Atajos de teclado personalizados
 bindsym $mod+q exec librewolf
 bindsym $mod+b exec ranger $HOME
-
+#Recorte de pantalla 
+bindsym Print exec "maim --select | xclip -selection clipboard -t image/png"
+#Captura de pantalla
+bindsym Shift+Print exec "maim | xclip -selection clipboard -t image/png"
 # kill focused window
 bindsym $mod+Shift+q kill
 #los bordes de todas las ventanas
@@ -69,11 +72,11 @@ bindsym $mod+d exec --no-startup-id ~/.config/rofi/scripts/./launcher_t3
 #Lanzador de powermenu
 bindsym $mod+Shift+s exec ~/.config/rofi/powermenu/type-4/powermenu.sh
 #Github token clipboard
-bindsym $mod+Shift+g exec ~/automatizacion/portapeles/github.sh
+bindsym $mod+Shift+g exec ~/.config/automatizacion/portapeles/github.sh
 #HDMI Connect espejo
-bindsym $mod+Shift+h exec ~/automatizacion/hdmi-connect/connect.sh
+bindsym $mod+Shift+h exec ~/.config/automatizacion/hdmi-connect/connect.sh
 #HDMI Connect una sola pantalla
-bindsym $mod+Shift+u exec ~/automatizacion/hdmi-connect/connect-unique.sh
+bindsym $mod+Shift+u exec ~/.config/automatizacion/hdmi-connect/connect-unique.sh
 #Rofi WIFI menu 
 bindsym $mod+Shift+w exec ~/.config/rofi-wifi-menu/rofi-wifi-menu.sh
 #A more modern dmenu replacement is rofi:
