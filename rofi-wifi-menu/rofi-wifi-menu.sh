@@ -96,8 +96,13 @@ else
     if [[ $WIFIPASS == "" ]]; then
       echo "Password vacia"
     else
-      nmcli dev wifi con "$CHSSID" password "$WIFIPASS"
-      echo "Red conectada " | rofi -dmenu -theme $THEME_MESSAGE -lines 1 -font $FONT
+      RESULTADO=$(nmcli -g name dev wifi con "$CHSSID" password "$WIFIPASS" 2>&1)
+      if [[ $? -ne 0 ]]; then
+        echo "Error al conectar 󱚼 " | rofi -dmenu -theme $THEME_MESSAGE -lines 1 -font $FONT
+      else
+        echo "Red conectada " | rofi -dmenu -theme $THEME_MESSAGE -lines 1 -font $FONT
+
+      fi
     fi
   fi
 

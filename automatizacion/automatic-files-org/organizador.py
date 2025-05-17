@@ -2,7 +2,7 @@ import os
 import json
 import re
 # Configurar la ruta de la carpeta a organizar
-configFile = open(".config.json")
+configFile = open("/home/tomyvaras/.config/automatizacion/automatic-files-org/config.json")
 config=json.load(configFile)
 
 ruta=config["ruta_raiz"]

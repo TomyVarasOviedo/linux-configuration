@@ -17,6 +17,8 @@
 /xfce4/*
 /xarchiver/*
 /gpicview/*
+/chromium/*
+/ncspot/*
 
 yad.conf
 sshd_config

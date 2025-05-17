@@ -1,0 +1,133 @@
+* {
+    background-color: #111111;
+    foreground: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    text-color: #f59335;
+    font: "FiraCode Nerd Font 12";
+}
+
+window {
+    background-color: #111111;
+    border: 2px solid;
+    border-color: #C70039;
+    border-radius: 40px;
+}
+
+mainbox {
+    background-color: #111111;
+    border: 2px solid;
+    border-color: #900C3F;
+    border-radius: 30px;
+}
+
+listview {
+    lines: 0;
+    fixed-height: 0;
+    dynamic-width: 0;
+    padding: 0px;
+}
+
+element {
+    background-color: #111111;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+element selected {
+    background: #ff0000;
+    border: 1px solid;
+    border-color: #C70039;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+element urgent {
+    background: #111111;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+scrollbar {
+    width: 5px;
+    background: #111111;
+}
+
+prompt {
+    background-color: #111111;
+    foreground: #111111;
+}
+
+inputbar {
+    background-color: #111111;
+    border: 1px solid;
+    border-radius: 5px;
+    text-color: #900C3F;
+    padding: 0px;
+    margin: 5px;
+}
+
+inputbar focused {
+    background-color: #111111;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+inputbar unfocused {
+    background: #1e1e1e;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+inputbar selected {
+    background-color: #ff0000;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+inputbar urgent {
+    background-color: #ff0000;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+inputbar disabled {
+    background-color: #1e1e1e;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+inputbar focused disabled {
+    background: #1e1e1e;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+inputbar unfocused disabled {
+    background: #1e1e1e;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+inputbar selected disabled {
+    background: #ff0000;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+inputbar urgent disabled {
+    background: #ff0000;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2px;
+}

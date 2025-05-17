@@ -53,11 +53,13 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec kitty
 #Atajos de teclado personalizados
 bindsym $mod+q exec librewolf
-bindsym $mod+b exec ranger $HOME
+bindsym $mod+b exec --no-startup-id kitty -e ranger $HOME
 #Recorte de pantalla 
 bindsym Print exec "maim --select | xclip -selection clipboard -t image/png"
 #Captura de pantalla
 bindsym Shift+Print exec "maim | xclip -selection clipboard -t image/png"
+#Nvim launcher
+bindsym $mod+c exec --no-startup-id ~/.config/automatizacion/nvim-launcher/nvim-rofi-laucher.sh
 # kill focused window
 bindsym $mod+Shift+q kill
 #los bordes de todas las ventanas
@@ -140,9 +142,9 @@ bindsym $mod+a focus parent
 set $ws1 " "
 set $ws2 " "
 set $ws3 " "
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
+set $ws4 " "
+set $ws5 "󱚣 "
+set $ws6 " "
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
@@ -222,6 +224,6 @@ bar {
 		}
 }
 #Fondo de pantalla
-exec feh --bg-fill /home/tomyvaras/Documentos/Fondos/fondo.jpg
+exec feh --bg-fill /home/tomyvaras/Documentos/Fondos/fondo-grievous.jpg
 
 exec_always picom -b -f --no-vsync

@@ -1,7 +1,0 @@
-{
- "ruta_raiz":"/home/tomyvaras/Descargas",
- "clasificacion":{
- 	"instaladores":[".deb"],
-	"Imagenes":[".jpg",".png", ".jpeg", "background"]
- }
-}

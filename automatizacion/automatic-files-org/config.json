@@ -1,0 +1,8 @@
+{
+ "ruta_raiz":"/home/tomyvaras/Descargas",
+ "clasificacion":{
+ 	"Instaladores":[".deb", ".exe"],
+	"Imagenes":[".jpg",".png", ".jpeg", "background"],
+  "Universidad":[".ppt", ".pdf","universidad", "SSCC", ".docx", "Clase", "clase"]
+ }
+}
