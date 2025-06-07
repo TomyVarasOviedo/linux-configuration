@@ -3,6 +3,6 @@
  "clasificacion":{
  	"Instaladores":[".deb", ".exe"],
 	"Imagenes":[".jpg",".png", ".jpeg", "background"],
-  "Universidad":[".ppt", ".pdf","universidad", "SSCC", ".docx", "Clase", "clase"]
+  "Universidad":[".pptx"," ".ppt", ".pdf","universidad", "SSCC", ".docx", "Clase", "clase"]
  }
 }

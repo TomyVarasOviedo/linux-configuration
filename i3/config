@@ -52,7 +52,7 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec kitty
 #Atajos de teclado personalizados
-bindsym $mod+q exec librewolf
+bindsym $mod+q exec chromium
 bindsym $mod+b exec --no-startup-id kitty -e ranger $HOME
 #Recorte de pantalla 
 bindsym Print exec "maim --select | xclip -selection clipboard -t image/png"
