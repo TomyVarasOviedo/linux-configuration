@@ -11,3 +11,14 @@ require("config.commands")
 --    { cmd = { "clean", "compile" }, desc = "clean then compile" },
 --  },
 --})
+
+-- Toggle Term Configuration
+require("toggleterm").setup({
+  autodir = true, -- Colocarse en la ruta de una caperta automaticamente
+  open_mapping = [[<C-S-ñ>]],
+  direction = "float",
+  size = 36,
+  start_in_insert = true,
+  insert_mappings = true,
+  terminal_mappings = true,
+})
