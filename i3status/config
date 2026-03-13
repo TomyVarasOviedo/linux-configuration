@@ -1,0 +1,66 @@
+general {
+        output_format = "i3bar"
+        colors = true
+        markup = pango
+        interval = 10 
+        color_good = '#C70039'
+		    color_degraded = '#900C3F'
+		    color_bad = '#FF5733'
+}
+
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "disk /home"
+order += "ethernet enp1s0"
+order += "wireless _first_"
+order += "volume master"
+order += "battery all"
+order += "tztime local"
+
+memory {
+    format = "<span background='#f59335'>  %percentage_used RAM </span>"
+}
+
+cpu_usage {
+        format = "<span background='#900C3F'>  %usage </span>"
+}
+
+disk "/" {
+        format = "<span background='#900C3F'>   %percentage_free Free </span>"
+}
+
+disk "/home" {
+        format = "<span background='#900C3F'>  %free Free </span>"
+}
+
+ethernet enp1s0 {
+        format_up = "<span background='#900C3F'>  %ip </span>"
+        format_down = "<span background='#581845'> 󱞐 </span>"
+}
+
+wireless _first_ {
+        format_up = "<span background='#900C3F' color='#FFFFFF' >   %essid </span>"
+        format_down = "<span background='#581845'> 󱚼 </span>"
+}
+
+volume master {
+        format = "<span background='#900C3F'>  %volume </span>"
+        format_muted = "<span background='#581845'> Muted </span>"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+battery all {
+        format = " <span foreground='#000000' background='#458588'> %status %percentage </span>"
+	  format_percentage = "%.0f%s"
+	  last_full_capacity = true
+    status_chr = ""
+    status_bat = ""
+    status_full = ""
+}
+
+tztime local {
+		format = "<span background='#900C3F'>  %a %-d %b %H:%M:%S </span>"
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "modules": [
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓",
+      "outputColor": "cyan",
+    },
+    "break",
+    {
+      "type": "os",
+      "keyIcon": "󰣚",
+      "keyColor": "cyan",
+      "format": "{name} {version}",
+    },
+    "kernel",
+    "uptime",
+    "packages",
+    {
+      "type": "shell",
+      "keyIcon": "",
+      "keyColor": "cyan",
+    },
+    "de",
+    "wm",
+    "icons",
+    {
+      "type": "terminal",
+      "keyIcon": "",
+      "keyColor": "cyan",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
+    },
+    "break",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "break",
+    {
+      "type": "custom",
+      "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    },
+  ],
+  "logo": {
+    "type": "kitty-direct",
+    "padding": {
+      "top": 2,
+      "left": 2,
+      "right": 2
+    },
+    "width": 23,
+    "height": 10,
+    "source": "/home/tomy/Documentos/Fondos/cat schrodinger.png",
+  },
+  "display": {
+    "key": {
+      "type": "icon"
+    },
+    "separator": "  󰫣 ",
+    "color": {
+      "keys": "cyan",
+      "title": "cyan",
+      "separator": "light_magenta",
+      "output": "light_cyan",
+    },
+  }
+}

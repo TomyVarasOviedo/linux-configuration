@@ -1,0 +1,28 @@
+{
+  "ruta_raiz": "/home/tomy/Descargas",
+  "clasificacion": {
+    "Instaladores": [
+      ".deb",
+      ".exe"
+    ],
+    "Imagenes": [
+      ".jpg",
+      ".png",
+      ".jpeg",
+      "background"
+    ],
+    "Universidad": [
+      ".pptx",
+      ".ppt",
+      "universidad",
+      "TPN",
+      "TP",
+      "Trabajo Practico",
+      "Examen",
+      "examen",
+      ".docx",
+      "Clase",
+      "clase"
+    ]
+  }
+}
