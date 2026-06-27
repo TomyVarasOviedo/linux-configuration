@@ -233,4 +233,4 @@ exec --no-startup-id sleep 3 && ~/.config/automatizacion/update-number-polybar/s
 exec fehchr
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh --forest
-exec_always picom -b -f --no-vsync
+exec_always picom -b -f --backend glx --vsync 
