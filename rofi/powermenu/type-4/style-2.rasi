@@ -28,9 +28,9 @@ configuration {
     textbox-font:                "FiraCode Nerd Font 14";
     element-text-font:           "feather 64";
     background-window:           black/85%;
-    background-normal:           #581845;
-    background-selected:         #900C3F;
-    foreground-normal:           #F59335;
+    background-normal:           #212B30;
+    background-selected:         #437CA1;
+    foreground-normal:           #437CA1;
     foreground-selected:         white;
 }
 

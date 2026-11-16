@@ -40,8 +40,8 @@ message {
     margin:                      0px;
     padding:                     20px;
     border-radius:               20px;
-    background-color:            #900C3F;
-    text-color:                  #F59335;
+    background-color:            #212B30;
+    text-color:                  #437CA1;
 }
 textbox {
     background-color:            inherit;
@@ -75,8 +75,8 @@ listview {
 element {
     padding:                     60px 10px;
     border-radius:               20px;
-    background-color:            #900C3F;
-    text-color:                  #F59335;
+    background-color:            #212B30;
+    text-color:                  #437CA1;
     cursor:                      pointer;
 }
 element-text {
@@ -88,6 +88,6 @@ element-text {
     horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            #F59335;
+    background-color:            #437CA1;
     text-color:                  var(background);
 }
